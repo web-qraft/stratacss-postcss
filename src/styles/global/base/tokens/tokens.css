@@ -1,0 +1,42 @@
+/*
+tokens.css
+==================================================
+*/
+
+:root {
+
+	/* フォントファミリー
+	-------------------------------------------------- */
+	--font-family-common: sans-serif;
+	--font-family-primary: "Inter";
+
+	/* カラー
+	--------------------------------------------------
+		Sass 版では Settings（Sass 変数）で算出している --brand-color-sub を、
+		PostCSS 版ではネイティブCSSの color-mix() で算出 */
+	--brand-color-main: #4139a6;
+	--brand-color-sub: color-mix(in srgb, #fff 75%, var(--brand-color-main));
+
+	/* コンテンツ有効幅
+	-------------------------------------------------- */
+	--maxw-sm: 768px;
+	--maxw-md: 840px;
+	--maxw-lg: 1024px;
+
+	/* 内部左右余白 */
+	--inner-pd-inline: 20px;
+
+	/* アニメーション関連
+	--------------------------------------------------
+		library 層（animate.css）の既定値 1s を上書き。
+		base.tokens は base.library より上位レイヤーなので、
+		詳細度が同じ :root でもこちらが適用される。 */
+	--animate-duration: 0.6s;
+
+	/* レスポンシブ設定
+	================================================== */
+	@media screen and ( min-width: 600px) {
+		/* 内部左右余白 */
+		--inner-pd-inline: 30px;
+	}
+}

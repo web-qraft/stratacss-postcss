@@ -1,0 +1,17 @@
+/*
+print.css
+==================================================
+印刷用のCSS
+*/
+
+@media print {
+	.site-header,
+	.site-footer {
+		display: none;
+	}
+
+	body {
+		color: #000;
+		background: #fff;
+	}
+}

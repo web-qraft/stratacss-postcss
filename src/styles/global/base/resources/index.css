@@ -1,0 +1,8 @@
+/*
+index.css
+==================================================
+base / resources — フォントやアニメーションなどの共通アットルール
+*/
+
+@import "./fonts.css";
+@import "./animations.css";

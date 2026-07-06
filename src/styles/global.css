@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* レイヤー宣言
+-------------------------------------------------- */
+@layer
+	base.generic, base.library, base.resources, base.tokens, base.themes, base.elements,
+	layout,
+	components,
+	pages,
+	utilities,
+	print;
+
+/* 各レイヤーの取り込み
+-------------------------------------------------- */
+@import "./global/base/generic/index.css" layer(base.generic);
+@import "./global/base/library/index.css" layer(base.library);
+@import "./global/base/resources/index.css" layer(base.resources);
+@import "./global/base/tokens/index.css" layer(base.tokens);
+@import "./global/base/themes/index.css" layer(base.themes);
+@import "./global/base/elements/index.css" layer(base.elements);
+@import "./global/layout/index.css" layer(layout);
+@import "./global/components/index.css" layer(components);
+@import "./global/utilities/index.css" layer(utilities);
+@import "./global/print/index.css" layer(print);

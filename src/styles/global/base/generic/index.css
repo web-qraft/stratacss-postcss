@@ -1,0 +1,9 @@
+/*
+index.css
+==================================================
+base / generic — ブラウザ初期スタイルの平滑化
+*/
+
+/* リセットCSSとして npm の kiso.css を利用
+	（パッケージ名指定 → node_modules から解決される） */
+@import "kiso.css/kiso.css";

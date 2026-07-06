@@ -1,0 +1,15 @@
+/*
+index.css
+==================================================
+components — 共通部品
+*/
+
+/* 下層ページ表題 */
+@import "./page-header.css";
+/* パンくずリスト */
+@import "./topic-path.css";
+
+/* カード */
+@import "./c-card.css";
+/* リンクボタン */
+@import "./c-linkbtn.css";

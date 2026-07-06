@@ -1,0 +1,13 @@
+/*
+index.css
+==================================================
+base / library — 外部で作成された基底系・共通機能のCSS
+
+npm 管理の animate.css から「必要な部分だけ」取り込む例。
+パッケージ名からのパス指定で node_modules から解決される。
+source/ から使うものだけを取り込み
+*/
+
+@import "animate.css/source/_vars.css";
+@import "animate.css/source/_base.css";
+@import "animate.css/source/fading_entrances/fadeInUp.css";
